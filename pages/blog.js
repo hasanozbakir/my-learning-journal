@@ -16,6 +16,7 @@ export function getBlogHtml(blogObj) {
                         return `<p>${paragraph}</p>`
                     }).join('')}
                 </div>
-            </section>`
+            </section>
+            <p class="recent-posts-title">Recent posts</p>`
 
 }
