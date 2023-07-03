@@ -6,14 +6,14 @@ export function getBlogsHtml(length) {
     let blogs = ""
 
     postsArray.map(blog => {
-        const {id, img, alt, date, title, intro } = blog
+        const {id, img, alt, date, title, info } = blog
 
         blogs += `
                     <div id="${id}" class="blog-container">
                         <img class="article-image" data-blog="${id}" src="${img}" alt="${alt}">
                         <span class="article-date">${date}</span>
                         <h3 class="blog-title">${title}</h3>
-                        <p data-blog="${id}" class="blog-content">${intro[1].text}</p>
+                        <p data-blog="${id}" class="blog-content">${info}</p>
                     </div>
                     `
     })
